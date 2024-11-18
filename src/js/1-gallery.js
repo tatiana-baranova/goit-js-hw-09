@@ -85,4 +85,5 @@ alt="${description}"
 
 gallery.insertAdjacentHTML('beforeend', galleryNew);
 
+console.log(galleryNew);
 
