@@ -2,10 +2,6 @@ import SimpleLightbox from "simplelightbox";
 
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-new SimpleLightbox('.gallery a', { captionsData: 'alt', captionsDelay: 250, });
-
-// console.log(SimpleLightbox);
-
 const images = [
 {
     preview:
@@ -74,10 +70,11 @@ const images = [
 
 const gallery = document.querySelector('.gallery')
 console.log(gallery);
+
 const galleryNew = images.map(({ preview, original, description }) => `<li class="gallery-item"> 
 <a class="gallery-link" href="${original}">
 <img class="gallery-image"
-src="${preview}
+src="${preview}"
 alt="${description}"
 />
 </a>
@@ -85,5 +82,4 @@ alt="${description}"
 
 gallery.insertAdjacentHTML('beforeend', galleryNew);
 
-console.log(galleryNew);
-
+const lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionsDelay: 250, });

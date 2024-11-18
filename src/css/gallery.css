@@ -1,0 +1,68 @@
+img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style: none
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0;
+}
+
+.gallery-link {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+    object-fit: cover;
+    /* cursor: url('../images/hand.svg') pointer; */
+    background-color: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper {
+    background-color: rgba(46, 47, 66, 0.8);
+}
+
+
+div.sl-wrapper .sl-close {
+    color: #fff;
+}
+
+.sl-wrapper .sl-navigation .sl-next {
+    color: #fff;
+}
+
+.sl-wrapper .sl-navigation .sl-prev {
+    color: #fff;
+}
+
+.sl-total {
+    color: #fff;
+}
+
+.sl-current {
+    color: #fff;
+}
+
+div.sl-wrapper .sl-counter {
+    color: #fff;
+}
